@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter as Router,Route,Link,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom';
 import All from '../components/All';
 import Good from '../components/Good';
 import Share from '../components/Share';
@@ -20,6 +20,7 @@ export default class Home extends Component {
             </div>
             <div className = 'tablelist'>
                 <Switch>
+                <Route exact path = '/' component = {All}/>
                 <Route exact path = '/home' component = {All}/>
                 <Route exact path = '/home/all' component = {All}/>
                 <Route exact path = '/home/all/:pages' component = {All}/>

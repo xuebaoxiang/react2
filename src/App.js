@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
-import {HashRouter as Router,Route,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Redirect} from 'react-router-dom';
 import Home from './container/Home';
 import Api from './container/Api';
 import About from './container/About';
@@ -16,9 +16,7 @@ export default class App extends Component {
                     <Header/>
                     <div className='main'>
                         <div className="content">
-                            <Route  path = '/' >
-                                <Redirect to='/home'/>
-                            </Route>
+                            <Route exact path = '/' component = {All}></Route>
                             <Route path = '/home' component = {Home}/>
                             <Route path='/api' component={Api} />
                             <Route path='/start' component={Start} />

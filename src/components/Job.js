@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {HashRouter as Router,Route,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 export default class Job extends Component {
     constructor(props){
         super(props);
@@ -54,7 +54,7 @@ export default class Job extends Component {
                 </ul>
                 <table className = 'table'>
                 <tr className = 'tr'>
-                    {[1,2,3,4,5,6,7,8,9,10].map((item)=>(<td className = 'td' ><button className = 'button'><Link to = {'/home/job/'+item} replace>{item}</Link></button></td>))}
+                    {[1,2,3,4,5,6,7,8,9,10].map((item)=>(<td className = 'td' ><button className = 'button'><Link to = {'/home/job/'+item}>{item}</Link></button></td>))}
                 </tr>
                 </table>
                 
