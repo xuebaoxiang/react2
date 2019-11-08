@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom';
+import {Route,Link,Switch} from 'react-router-dom';
 import All from '../components/All';
 import Good from '../components/Good';
 import Share from '../components/Share';
@@ -9,7 +9,7 @@ import Dev from '../components/Dev';
 export default class Home extends Component {
     render() {
         return (
-            <Router>
+           <div>
             <div className = 'navtab'>
                <Link to = '/home/all' >全部</Link>
                <Link to = '/home/good' >精华</Link>
@@ -35,8 +35,8 @@ export default class Home extends Component {
                 <Route exact path = '/home/dev'  component = {Dev}/>
                 </Switch>
             </div>
-            
-            </Router>
+            </div>
+           
            
         )
     }

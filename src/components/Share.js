@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 export default class Share extends Component {
     constructor(props){
         super(props);
@@ -24,7 +24,7 @@ export default class Share extends Component {
     }
     render() {
         return (
-            <Router>
+            <div>
                 <div className = 'conbox'>
                 <ul>
                 {this.state.data.map((item,index)=>(
@@ -60,7 +60,7 @@ export default class Share extends Component {
                 </table>
                 
             </div>
-            </Router>
+            </div>
             
         )
     }

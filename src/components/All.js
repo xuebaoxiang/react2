@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 export default class All extends Component {
     constructor(props){
         super(props);
@@ -24,7 +24,7 @@ export default class All extends Component {
     }
     render() {
         return (
-            <Router>
+            <div>
                 <div className = 'conbox'>
                 <ul>
                 {this.state.data.map((item,index)=>(
@@ -61,7 +61,7 @@ export default class All extends Component {
                 </table>
                 
             </div>
-            </Router>
+            </div>
             
         )
     }

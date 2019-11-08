@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 export default class Login extends Component {
     render() {
         return (
-           <Router>
+           <div>
                <div id = 'login'>
                    <Link style={{color:'green'}} to='/home'>主页</Link>
                    <Link to='#'>/ 登录</Link>
@@ -21,7 +21,7 @@ export default class Login extends Component {
                     <Link to='/home'>登录</Link>
                 </div>
                </div>
-           </Router>
+           </div>
         )
     }
 }
